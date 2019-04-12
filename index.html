@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<div d='wx_pic' style="margin:0 auto;display: none;">
+			<img src="img/loading.gif" />
+		</div>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewort" content="width=device-width,iniial-scale=1.0,maximum-scale=1.0,
+		user-scalable=0"/>
+		<meta name="apple-touch-fullscreen" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="balck">
+		<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+		<script type="text/javascript" src="js/myjs.js"></script>
+		<link href="css/mycss.css" type="text/css" rel="stylesheet"/>	
+	</head>
+	<body>
+		<!-- loading页面 -->
+		<div id="loading">
+			<img id="loading" src="img/loading.gif" />
+		</div>
+		
+		<!-- 初始界面 -->
+		<div id="scene1">
+			<div id="biaoti" hidden="true">
+				<img id="iim" src="img/image_biaoti.png" />
+			</div>
+			<div id="i0" hidden="true">		
+				 <input id="i1" type="button"  />
+			</div>
+			<div id="bg" hidden="true">	
+				<img id="bg" src="img/image_bg_1.png" />
+				<!-- <input type="button" value="滚" id="b2" width="100px"/> -->
+			</div>
+			<div id="xuyuanzhe" style="border: 1px red solid;" hidden="true">
+				<div id="xuyuanzheimg" style="border:1px red solid;"> <img id="xuyuanzheimg" src="img/sign_xuyuanzhe.png" /></div>
+				<div id="xuyuanzhe8" style="border:1px red solid;height: 70px;margin-left: 200px;clear: both;" >123</div>
+				<div id="xuyuanxiala" align="center">
+					<img id="xuyuanxiala" src="img/btn_xiala.png" />
+				</div>
+				
+
+			</div>
+		</div>
+		<!-- 交互界面 -->
+		<div id="scene2" hidden="true">
+			<div id="wojianghui">
+				<p id="wojianghuip">2019年,你将会</p>
+			</div>
+			
+		</div>
+		<!-- 结果界面 -->
+		<div id="scene3">
+			
+		</div>
+		
+		<!-- 弹窗内容开始 -->
+		<div id="background" class="back">
+			<div id="div1" class="content">
+				<div id="div2">
+					<button id="close-button" ></button><!-- 关闭按钮 -->
+				</div>
+				<div>
+					<textarea name="miaoshu" maxlength='500'   placeholder="任职要求、岗位职责、福利等。" style="height:9em;"></textarea>
+				</div>
+			</div>
+		</div>
+		<!-- 音乐控制界面 -->
+		<div id="musicplayer" hidden="true">
+			<button id="musicon"></button>
+			<button id="musicoff"  class="hidden"></button>
+			<audio id="music" src="img/music.mp3" autoplay loop></audio>
+		</div>
+        
+		<script type="text/javascript">
+			window.onload=function(){
+				//document.getElementById("loading").style.display="none";
+			}
+		</script>
+	</body>
+</html>
